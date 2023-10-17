@@ -9,3 +9,9 @@ val question = "삶, 우주, 그리고 모든 것에 대한 궁긍적인 질문"
 val answer = 42
 
 val answer2: Int = 42
+
+/**
+ * 초기화 식을 사용하지 않고 변수를 선언ㄴ하려면 변수 타입을 반드시 명시해야 한다.
+ */
+
+// val answer3 // error
