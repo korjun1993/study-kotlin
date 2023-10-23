@@ -16,6 +16,9 @@
 # build file
 build
 
+# gradle
+.gradle
+
 # Package Files #
 *.jar
 *.war
