@@ -1,4 +1,4 @@
-package `1`
+package ch02.코틀린기초
 
 /**
  * 코틀린에서 if는 식이지 문(statement)이 아니다.

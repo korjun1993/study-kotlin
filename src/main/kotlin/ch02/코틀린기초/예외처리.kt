@@ -1,4 +1,4 @@
-package `1`
+package ch02.코틀린기초
 
 import java.io.BufferedReader
 import kotlin.NumberFormatException

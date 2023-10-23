@@ -1,4 +1,4 @@
-package `1`
+package ch02.코틀린기초
 
 /**
  * 커스텀 접근자

@@ -1,4 +1,4 @@
-package `1`
+package ch02.코틀린기초
 
 /**
  * 코틀린의 클래스 기본 접근 제어자는 public 이다.
