@@ -33,3 +33,41 @@ abstract class Decorator(val wrapee: IComponent) : IComponent {
     }
 }
 
+class ComponentDecorator1(component: IComponent) : Decorator(component) {
+    override fun operation() {
+        super.operation()   // 원본 객체를
+        extraOperation()    // 장식 클래스만의 메소드 실행
+    }
+
+    private fun extraOperation() {
+
+    }
+}
+
+class ComponentDecorator2(component: IComponent) : Decorator(component) {
+    override fun operation() {
+        super.operation()
+        extraOperation()    // 장식 클래스만의 메소드 실행
+    }
+
+    private fun extraOperation() {
+
+    }
+}
+
+fun main() {
+    // 1. 원본 객체 생성
+    val obj = ConcreteComponent()
+
+    // 2. 장식 1
+    val deco1 = ComponentDecorator1(obj)
+    deco1.operation()
+
+    // 3. 장식 2
+    val deco2 = ComponentDecorator2(obj)
+    deco2.operation()
+
+    // 4. 장식 1 + 2
+    val deco3 = ComponentDecorator1(ComponentDecorator2(obj))
+    deco3.operation()
+}
